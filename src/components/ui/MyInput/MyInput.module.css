@@ -1,0 +1,9 @@
+.myInput{
+    appearance: none;
+    padding:  10px;
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid rgb(1, 90, 1);
+    background-color: rgb(38, 46, 36);
+    color: cadetblue;
+}

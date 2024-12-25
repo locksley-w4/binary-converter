@@ -1,0 +1,62 @@
+.customSelect {
+    position: relative;
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    background-color: rgb(30, 104, 63);
+    color: rgb(234, 248, 231);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.options {
+    width: 100%;
+    /* height: 100px; */
+    position: absolute;
+    left: 50%;
+    top: -15%;
+    transform: translateX(-50%);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    z-index: 100;
+    /* background-color: black; */
+}
+
+.customSelect select {
+    display: none;
+    appearance: none;
+}
+
+.customSelect .options button:first-child {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.customSelect .options button:last-child {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.customSelect .options button {
+    width: 100%;
+    padding: 10px 5px;
+    margin: 0;
+    height: auto;
+    font-size: 1rem;
+    border-radius: 0;
+    outline: none;
+}
+
+.options.active {
+    display: flex;
+}
+
+/* .customSelect.active select {
+    display: none;
+} */
